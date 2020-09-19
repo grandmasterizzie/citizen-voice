@@ -42,3 +42,29 @@
 td{
 	padding: 5px;
 }
+
+.overlay {
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+
+td:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+img {
+  width: 200px;
+}
+
+.ways {
+  text-transform: uppercase;
+  z-index: 1;
+  transition: top .5s ease;
+  opacity: 0;
+}
+
+td:hover .ways {
+  opacity: 1;
+}
