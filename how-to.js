@@ -35,3 +35,7 @@ function drawChart() {
   var chart = new google.visualization.AreaChart(document.getElementById('bigGraph'));
   chart.draw(data, options);
 }
+
+function changeDisp(){
+	
+}
