@@ -1,10 +1,14 @@
+body {
+  background-color: #F7F8F3 !important;
+}
+
 #title {
     position: absolute;
     z-index: 3;
-    top: 100px;
+    top: 150px;
     left: 50px;
-    font-size: 55px;
-    width: 800px;
+    font-size: 70px;
+    width: 600px;
 }
 
 #stat {
@@ -26,12 +30,27 @@
     z-index:0;
 }
 
-path:hover, 
-circle:hover {
-    stroke: #b89451 !important;
+.D {
+  fill: #78BCC4 !important;
+}
+
+.R {
+  fill: #F7444E !important;
+}
+
+.D:hover {
+  stroke: #5c9fa7 !important;
     stroke-width: 5px;
     stroke-linejoin: round;
-    fill: #d3aa5d !important;
+    fill: #67aeb6 !important;
+    cursor: pointer;
+}
+
+.R:hover {
+    stroke: #e04f56 !important;
+    stroke-width: 5px;
+    stroke-linejoin: round;
+    fill: #fc565e !important;
     cursor: pointer;
 }
 
