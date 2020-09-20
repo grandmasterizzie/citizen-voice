@@ -41,6 +41,7 @@
 
 td{
 	padding: 5px;
+	position: relative;
 }
 
 .overlay {
@@ -55,14 +56,21 @@ td:hover .overlay {
 }
 
 img {
-  width: 200px;
+  width: 100%;
+  z-index:0;
 }
+
 
 .ways {
   text-transform: uppercase;
   z-index: 1;
-  transition: top .5s ease;
   opacity: 0;
+  position: absolute;
+  color: white;
+  top: 40px;
+  left: 20px;
+  font-size: 40px;
+  margin-right: 20px;
 }
 
 td:hover .ways {
