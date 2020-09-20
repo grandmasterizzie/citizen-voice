@@ -6,6 +6,7 @@ body {
 /*--- navigation bar ---*/
 .navbar {
   background: black;
+  z-index:5;
 }
 .nav-link,
 .navbar-brand {
