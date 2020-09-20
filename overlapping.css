@@ -42,6 +42,7 @@
 td{
 	padding: 5px;
 	position: relative;
+	width: 100px;
 }
 
 .overlay {
@@ -59,7 +60,6 @@ img {
   width: 100%;
   z-index:0;
 }
-
 
 .ways {
   text-transform: uppercase;
