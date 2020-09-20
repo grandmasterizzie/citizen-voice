@@ -28,7 +28,8 @@ function drawChart() {
   var options = {
   	chartArea:{left:0,top:0,width:'100%',height:'100%'},
   	vAxis:{gridlines:{count:0}, textPosition:'none'},
-  	legend:{position:'none'}
+  	legend:{position:'none'},
+    series:{0:{color:"F7444E"}}
   };
 
   // Display the chart inside the <div> element with id="piechart"
