@@ -10,7 +10,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="#"><img src="img/citizenvoice.svg" width="175" height="50" alt=""></a>
+            <a class="navbar-brand" href="home.html"><img src="img/citizenvoice.svg" width="175" height="50" alt=""></a>
             <button class="navbar-toggler navbar-primary" type="button" data-toggle="collapse" data-target="#main-navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -87,5 +87,21 @@
         </g></svg>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="home.js"></script>
+        <button onclick="getLocation()" style="position:absolute; top:1000px; left:100 px">Share my location</button>
+        <script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude +
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
     </body>
 </html>
